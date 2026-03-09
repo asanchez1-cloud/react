@@ -6,6 +6,7 @@ function Exercici1() {
 
   return (
     <div className="exercici">
+      <h1>Hello</h1>
       <h2>{numero}</h2>
       <button onClick={() => setNumero(numero + 1)}>Incrementar</button>
       <button onClick={() => setNumero(numero - 1)}>Decrementar</button>
