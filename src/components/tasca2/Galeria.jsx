@@ -8,9 +8,10 @@ function Exercici1() {
   const [imatges, setImatges] = useState([foto1, foto2, foto3, foto4]);
 
   return (
-    <div style={{ display: 'flex', gap: '10px' }}>
-      {imatges.map((imatge) => {
-        return (
+    <div>
+      <h2>Galeria</h2>
+      <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+        {imatges.map((imatge) => (
           <div key={imatge}>
             <img 
               src={imatge} 
@@ -18,8 +19,8 @@ function Exercici1() {
               style={{ width: '250px', height: '180px', objectFit: 'cover' }} 
             />
           </div>
-        )
-      })}
+        ))}
+      </div>
     </div>
   );
 }
