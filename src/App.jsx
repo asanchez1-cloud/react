@@ -6,6 +6,8 @@ import Exercici1 from './components/tasca1/Exercici1';
 import Exercici2 from './components/tasca1/Exercici2';
 import Exercici3 from './components/tasca1/Exercici3';
 import Exercici4 from './components/tasca1/Exercici4';
+import Tasca_props from './components/tasca3/Tasca_props';
+import lizard from './imatges/lizard.png';
 
 
 import Menu from './Menu';
@@ -26,7 +28,16 @@ function App() {
         return <Galeria />
       case "tasca 2.2":
         return <Carrusel />
-      default:
+      case "tasca_props":
+        return <div>
+          <Tasca_props imatge={lizard} titol="Lizard" text="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica" b1="SHARE" l1="#" b2="LEARN MORE" l2="#" />
+          <Tasca_props imatge={lizard} titol="Lizard" text="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica" b1="SHARE" l1="#" b2="LEARN MORE" l2="#" />
+          <Tasca_props imatge={lizard} titol="Lizard" text="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica" b1="SHARE" l1="#" b2="LEARN MORE" l2="#" />
+          <Tasca_props imatge={lizard} titol="Lizard" text="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica" b1="SHARE" l1="#" b2="LEARN MORE" l2="#" />
+          <Tasca_props imatge={lizard} titol="Lizard" text="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica" b1="SHARE" l1="#" b2="LEARN MORE" l2="#" />
+        </div>
+      
+        default:
       return null
     }
   }
