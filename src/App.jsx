@@ -8,6 +8,7 @@ import Exercici3 from './components/tasca1/Exercici3';
 import Exercici4 from './components/tasca1/Exercici4';
 import Tasca_props from './components/tasca3/Tasca_props';
 import lizard from './imatges/lizard.png';
+import Tasca4Grid from './components/tasca4/Tasca4_grid';
 
 
 import Menu from './Menu';
@@ -36,7 +37,8 @@ function App() {
           <Tasca_props imatge={lizard} titol="Lizard" text="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica" b1="SHARE" l1="#" b2="LEARN MORE" l2="#" />
           <Tasca_props imatge={lizard} titol="Lizard" text="Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica" b1="SHARE" l1="#" b2="LEARN MORE" l2="#" />
         </div>
-      
+      case "tasca4_grid":
+        return <Tasca4Grid />
         default:
       return null
     }

@@ -1,5 +1,5 @@
 function Menu({canviarTasca}) {
-    const menuItems = ['tasca 1', "tasca 2", "tasca 3", "tasca 4", "tasca 2.1", "tasca 2.2", "tasca_props"]
+    const menuItems = ['tasca 1', "tasca 2", "tasca 3", "tasca 4", "tasca 2.1", "tasca 2.2", "tasca_props", "tasca4_grid"]
     function onClickMenuItem (item) {
         canviarTasca(item)
     }
