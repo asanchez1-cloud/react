@@ -8,8 +8,7 @@ import Exercici3 from './components/tasca1/Exercici3';
 import Exercici4 from './components/tasca1/Exercici4';
 import Tasca_props from './components/tasca3/Tasca_props';
 import lizard from './imatges/lizard.png';
-import Tasca4Grid from './components/tasca4/Tasca4_grid';
-
+import Tasca5Repas from './components/tasca5/Tasca5_repas';
 
 import Menu from './Menu';
 function App() {
@@ -39,6 +38,9 @@ function App() {
         </div>
       case "tasca4_grid":
         return <Tasca4Grid />
+      case "tasca5_repas":
+        return <Tasca5Repas />
+        
         default:
       return null
     }
